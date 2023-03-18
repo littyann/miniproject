@@ -1,0 +1,18 @@
+  
+ <body>
+    <div class="main">
+    <h5> “With the biodiversity loss in many ecosystems right now, it’s critical to document where and with what abundance different species exist in an environment”</h5>
+    <button class="button-3" role="button" routerLink="/add">ADD NEW</button>
+    <ul class="cards">
+    <li class="cards_item" *ngFor="let i of fauna">
+      <div class="card"  style="width: 15rem;">
+        <div class="card_image"><img src="{{i.image}}"style="height: 200px; width: 15rem;"></div>
+        <div class="card_content">
+          <h2 class="card_title">{{i.name}}</h2>
+          <a (click)="gotopage(i.name)" class="btn card_btn">Read More</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>

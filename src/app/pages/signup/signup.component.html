@@ -1,0 +1,81 @@
+<!-- <body>
+<div class="container">
+    <div class="screen">
+     <div class="screen__content">
+      <form class="login">
+       <div class="login__field">
+        <i class="login__icon fas fa-user"></i>
+        <input type="text" class="login__input" placeholder="User name / Email">
+       </div>
+       <div class="login__field">
+        <i class="login__icon fas fa-lock"></i>
+        <input type="password" class="login__input" placeholder="Password">
+       </div>
+       <button class="button login__submit">
+        <span class="button__text">signup Now</span>
+        <i class="button__icon fas fa-chevron-right"></i>
+       </button>    
+      </form>
+      <div class="social-login">
+       <h4>already a user</h4>
+	   <a routerLink="/login">login</a>
+      
+      </div>
+     </div>
+     <div class="screen__background">
+      <span class="screenbackgroundshape screenbackgroundshape4"></span>
+      <span class="screenbackgroundshape screenbackgroundshape3"></span>  
+      <span class="screenbackgroundshape screenbackgroundshape2"></span>
+      <span class="screenbackgroundshape screenbackgroundshape1"></span>
+     </div>  
+    </div>
+   </div>
+</body>  -->
+
+<body>
+    <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>Signup</span>
+                  
+                </div>
+                <div class="app-contact">click signup to go to home </div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input type="text" class="app-form-control"  name="name" placeholder="NAME"  [(ngModel)]="name">
+                  </div>
+                  <div class="app-form-group">
+                    <input  type="text" class="app-form-control" name="email" placeholder="email"  [(ngModel)]="email"  >
+                  </div>
+                  <div class="app-form-group">
+                    <input  type="password" class="app-form-control"  name="password" placeholder="password" [(ngModel)]="password" >
+                  </div>               
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button" routerLink="/login">login</button>
+                    <button class="app-form-button"  (click)="register()">signup</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </body>

@@ -1,0 +1,33 @@
+
+
+<div class="col-md-6 offset-md-3 mt-5">
+        <img src='https://png.pngtree.com/png-vector/20230120/ourmid/pngtree-oak-tree-logo-design-png-image_6566843.png'>
+         <br>
+     
+     <form>
+       <div class="form-group">
+         <label for="exampleInputName">Name</label>
+         <input type="text" name="name" class="form-control" placeholder="Enter  name " [(ngModel)]="name" required="required">
+       </div>
+       <div class="form-group">
+         <label for="description" required="required">description</label>
+         <textarea name="description" class="form-control"  aria-describedby="emailHelp" [(ngModel)]="description" placeholder="description"></textarea>
+       </div>
+       <div class="form-group">
+         <label for="exampleFormControlSelect1">Catagory</label>
+         <select class="form-control" id="exampleFormControlSelect1" name="platform" [(ngModel)]="platform" required="required">
+           <option>flora</option>
+           <option>fauna</option>
+           </select>
+       </div>
+       <hr>
+       <div class="form-group mt-3">
+         <label class="mr-2">Upload image</label>
+         <input type="file" name="file">
+       </div>
+       <hr>
+       <button class="button-3" role="button" (click)="add()">submit</button>
+     </form>
+ </div> 
+ 
+

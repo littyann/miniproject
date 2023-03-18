@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ecozone-a099b": {
+      "hosting": {
+        "ecozone": [
+          "ecozone-a099b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ecozone-a099b"
+  }
+}
